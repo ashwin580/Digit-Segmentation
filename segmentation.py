@@ -25,4 +25,5 @@ for (c, _) in cnts:
 	if w >= 6 and h >= 20:
 		cv2.rectangle(image, (x-6, y-6), (x + w+6, y + h+6),(0, 255, 0), 1)
 cv2.imshow("image", image)
-cv2.waitKey(0)
+cv2.waitKey()
+cv2.destroyAllWindows()
